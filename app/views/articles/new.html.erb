@@ -1,0 +1,9 @@
+<h1 class = 'text-center'>Create an article</h1>
+
+<%= simple_form_for(@article, html:{class: 'form-control'}) do |f| %>
+
+  <%= f.input :title, autofocus: true %>
+  <%= f.input :description %>
+  <%= f.button :submit, class: 'btn btn-primary btn-md' %>
+
+<% end %>
